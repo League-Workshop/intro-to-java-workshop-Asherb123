@@ -39,7 +39,7 @@ public class DragonFight {
 			
 		// 10. If they typed in "kick":
 		else {
-			int r=new Random().nextInt(10);
+			int r=new Random().nextInt(25);
 			DAttack=r;
 			DragonHealth-=DAttack;	
 			
@@ -53,12 +53,14 @@ public class DragonFight {
 			
 		
 		// 11.  Find a random number between 0 and 35 and store it in playerDamage
-		
+	 PAttack=new Random().nextInt(35);
 		// 12. Subtract this number from the player's health
-		
+		PlayerHealth-=PAttack;
 		
 		
 		// 13. If the user's health is less than or equal to 0
+	
+			
 		
 			//-- Tell the user that they lost
 			
